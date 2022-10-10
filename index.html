@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>meeting minutes</title>
+  </head>
+  <body>
+      <header>
+          <nav>
+              <ul>
+                  <li><a href="#agenda">agenda</a></li>
+                  <li><a href="#wrap-up">wrap up</a></li>
+                  <li><a href="#brainstorm">brainstorm</a></li>
+                  <li><a href="#FAQ">Concerns</a></li>
+                  <li><a href="#attendence">attendence</a></li>
+              </ul>
+          </nav>
+          <section id="title">
+              <h1>Text App Features Brainstorm</h1>
+              <h2>August 3rd 2019</h2>
+          </section>
+      </header>
+      <main>
+          <section id="media">
+              <h3>>the vid and the audio</h3>
+              <video controls src="/src/cap.mp4"></video>
+              <audio controls src="src/bcnr_concorde.mp3"></audio>
+          </section>
+          <section id="agenda">
+              <h3>agenda</h3>
+              <ol>
+                  <li>logistics</li>
+                  <li>wrap up from last time</li>
+                  <li>brainstorm</li>
+              </ol>   
+          </section>
+          <hr>
+        <section id ="wrap-up">
+            <h3>Wrap-up from last time</h3>
+            <p>Our <i>soi-disant</i> partners at microsoft have now officially abandoned us as we suspected
+             they might do at the end of the last meeting and we have indeed decided to fire steve,
+             he <b>will not</b> be missed and <strong>any further abscenses from meetings will result in 
+             being fired</strong></p>
+             <details>
+                
+             <summary>tldr</summary>
+             no more microsoft, no more steve, and no more tardies!
+            </details>
+            
+        </section> 
+        <hr>
+        <section id="brainstorm">
+            <h3>brainstorm</h3>
+            <p>antonio first presented this plan:</p>
+            <span><img src="/src/website_plan.png" alt="a plan for a website??? this is a text app"></span>
+            <br>
+            <p> what da heck? that's a website plan (guess who's getting fired next).
+                Jenniffer suggested that we should implement the ability to style text, but the boss told her
+                that the app was for <em>children.</em> let's all keep that in mind. someone else (i 
+                frorget their name) said we should remove the ability to send pictures then, because children 
+                doing so will encourage children to practice their imagery skills
+            </p>
+        </section>
+        <section id="FAQ">
+            <h3>Questions and Concerns</h3>
+            <p>the whole staff seems to be worried about how they're gonna market a text app for children without 
+               also creating a quite literal breeding ground for predetors
+            </p>
+        </section>
+
+        <section id ="attendence">
+            <h3>Attendence</h3>
+            <p>everyone present! except steve, obviously.</p>
+        </section>
+        <br>
+        <fieldset>
+            <legend>give me your metadata</legend>
+            <form action="url.com" method="get">
+
+                <label for="list">pick a number:</label>
+                <input list="numbers" id="list"> 
+                <datalist id="numbers">
+                    <option value="1_1">1</option>
+                    <option value="2_1">2</option>
+                    <option value="3_1">3</option>
+                </datalist>
+
+                <label for="list2">pick another number:</label>
+                <select id="list2">
+                    <option value="1_2">1</option>
+                    <option value="2_2">2</option>
+                    <option value="3_2">3</option>
+                </select>
+
+                <label for="date">pick a day:</label>
+                <input type="date" id="date">
+
+                <fieldset>
+                    <legend>pick yet another number</legend>
+
+                        <label for="one">1</label>
+                        <input name="num" type="radio" id="one" value="1_3"
+                               checked>
+                        <label for="two">2</label>
+                        <input name="num" type="radio" id="two"  value="2_3">
+                </fieldset>
+
+                <fieldset>
+                    <legend>pick one or <em>more</em> numbers</legend>
+                    <label for="first">1</label>
+                    <input type="checkbox" name="checklist_nums" id="first">
+                    <label for="second">2</label>
+                    <input type="checkbox" name="checklist_nums" id="second">
+                </fieldset>
+        
+
+                <textarea>type:</textarea>
+
+                <label for="text">type again</label>
+                <input type="text" id="text" name="text" required>
+
+                 <button type="submit">submit</button>
+            </form>
+        </fieldset>
+      </main>
+      <footer>
+        <p>why did i make this website</p>
+    </footer>
+  </html>
