@@ -6,37 +6,49 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+ 
     <title>meeting minutes</title>
+    <link href="style/stylesheet.css" rel="stylesheet">
+    <style>
+        section#title h2 {
+            color: black;
+        }
+
+    </style>
   </head>
   <body>
       <header>
-          <nav>
-              <ul>
-                  <li><a href="#agenda">agenda</a></li>
+          <p class ="secret" style="display:none;">woah a secret message</p>
+          <nav id="navbar">
+              <ul class="grid">
+                  <li id="first-link"><a href="#agenda">agenda</a></li>
                   <li><a href="#wrap-up">wrap up</a></li>
                   <li><a href="#brainstorm">brainstorm</a></li>
                   <li><a href="#FAQ">Concerns</a></li>
-                  <li><a href="#attendence">attendence</a></li>
+                  <li id="last-link"><a href="#attendence">attendence</a></li>
               </ul>
           </nav>
           <section id="title">
               <h1>Text App Features Brainstorm</h1>
-              <h2>August 3rd 2019</h2>
+
+              <h2 id="date">August 3rd 2019</h2>
           </section>
       </header>
       <main>
           <section id="media">
-              <h3>>the vid and the audio</h3>
+              <h3 style="color:black;">the vid and the audio:</h3>
               <video controls src="/src/cap.mp4"></video>
               <audio controls src="src/bcnr_concorde.mp3"></audio>
           </section>
           <section id="agenda">
               <h3>agenda</h3>
-              <ol>
+              <div>
+              <ol class="flexList">
                   <li>logistics</li>
                   <li>wrap up from last time</li>
                   <li>brainstorm</li>
               </ol>   
+              </div>
           </section>
           <hr>
         <section id ="wrap-up">
@@ -55,10 +67,12 @@
         <hr>
         <section id="brainstorm">
             <h3>brainstorm</h3>
-            <p>antonio first presented this plan:</p>
+            
+            <span class="caption"><p>antonio presented this plan</p></span>
+            <br>
             <span><img src="/src/website_plan.png" alt="a plan for a website??? this is a text app"></span>
             <br>
-            <p> what da heck? that's a website plan (guess who's getting fired next).
+            <p> what da heck? that's a website plan <span class="hover">(guess who's getting fired next)</span>.
                 Jenniffer suggested that we should implement the ability to style text, but the boss told her
                 that the app was for <em>children.</em> let's all keep that in mind. someone else (i 
                 frorget their name) said we should remove the ability to send pictures then, because children 

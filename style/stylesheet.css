@@ -1,0 +1,105 @@
+/**
+* Hello !
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@media screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+}
+body {
+    background-color: #FDF5DF;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+h1, h2, h3, h4 {
+    /** RGBA(94, 190, 196, 1) > */
+    color: HSL(184, 46%, 57%);
+  }
+nav#navbar {
+  margin-top: 5vh;
+  margin-bottom: 1vw;
+  margin-left: 1vmax;
+  margin-right: 1vmin;
+  
+  position: static;
+  
+}
+nav ul li {
+  padding-top: 0.23pc;
+  padding-bottom: 1mm;
+  padding-left: 0.03in;
+  padding-right: 0.1cm;
+
+  border-color:RGBA(94, 190, 196, 1);
+  border-style:groove;
+  
+  border-width: 1px;
+  border-radius: 1px;
+
+  position: relative;
+}
+
+ul.grid {
+  display: grid ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+}
+ 
+li.first-link {
+  grid-column-start: 1;
+  grid-row-start:    1;
+
+}
+
+li.last-link {
+  grid-column-end: 1;
+  grid-row-end:    1
+}
+
+li.firstlink + li + li + li + li {
+  justify-self: center;
+}
+
+div > ol {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  max-width: 8in;
+  min-width: 3in;
+
+  margin: 50px 50px 50px 50px;
+  
+}
+
+br ~p {
+  text-align: left;
+  text-decoration: wavy;
+}
+
+span {
+  margin: auto;
+}
+
+img {
+  width:360px;
+  height:460px;
+  display:inline;
+  
+}
+*.caption {
+  display:inline;
+}
+
+a:hover {
+  background-color: yellow;
+}
+
+a:active {
+  background-color: HSL(184, 46%, 57%);
+  color:             HSL(184, 46%, 57%); 
+}
